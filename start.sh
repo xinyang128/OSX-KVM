@@ -24,6 +24,7 @@ fi
 
 MY_OPTIONS="+pcid,+ssse3,+sse4.2,+popcnt,+avx,+aes,+xsave,+xsaveopt,check"
 
+
 qemu-system-x86_64 -enable-kvm \
           -cpu Penryn,kvm=on,vendor=GenuineIntel,+invtsc,vmware-cpuid-freq=on,$MY_OPTIONS\
           -machine pc-q35-2.10 \
